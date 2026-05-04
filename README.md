@@ -1,2 +1,62 @@
-# ngllink1
+#index.html
 ngl link
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask me anything 👀</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, sans-serif;
+      background: linear-gradient(135deg, #ff4e50, #fc913a);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+    input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .loading {
+      display: none;
+      margin-top: 15px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>Ask me anything 👀</h2>
+    <p>Tap below to type</p>
+
+    <input type="text" placeholder="Type here..." onclick="go()" />
+    <div class="loading" id="l">Connecting...</div>
+  </div>
+
+  <script>
+    function go() {
+      document.getElementById("l").style.display = "block";
+      setTimeout(() => {
+        window.location.href = "https://media.tenor.com/a69LRobwhuoAAAAM/aw-now-thats-tuff.gif";
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
